@@ -34,7 +34,7 @@ import os
 # Correct usage: environment variable name only
 SECRET_KEY = os.getenv('Django_Secret')  # NOT the actual key value
 DEBUG = False
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'https://djongo-3g5h.onrender.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'djongo-3g5h.onrender.com']
 
 OPENAI_KEY = os.getenv("OpenAI")
 MONGO_URI = os.getenv("Mongo_URI")
