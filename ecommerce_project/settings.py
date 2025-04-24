@@ -32,12 +32,12 @@ ALLOWED_HOSTS = []
 import os
 
 # Correct usage: environment variable name only
-SECRET_KEY = os.getenv('SECRET_KEY')  # NOT the actual key value
+SECRET_KEY = os.getenv('Django_Secret')  # NOT the actual key value
 DEBUG = False
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'https://djongo-3g5h.onrender.com']
 
-OPENAI_KEY = os.getenv("OPENAI_KEY")
-MONGO_URI = os.getenv("MONGO_URI")
+OPENAI_KEY = os.getenv("OpenAI")
+MONGO_URI = os.getenv("Mongo_URI")
 
 
 INSTALLED_APPS = [
