@@ -33,7 +33,7 @@ import os
 # environment variables
 SECRET_KEY = '8&+7*fpz#2@l34*o_5(8b9r2z6911b)tdtohx8d^yc6x*#@76m'
 DEBUG = False
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'https://djongo-3g5h.onrender.com/store/']
 
 # Add your environment variables for MongoDB and OpenAI
 OPENAI_KEY = 'AIzaSyAD23OTjqg-mfRlNTY9tx8-lt14G9AKPSY'
