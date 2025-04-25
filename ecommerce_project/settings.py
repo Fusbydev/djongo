@@ -30,15 +30,14 @@ ALLOWED_HOSTS = []
 
 # Application definition
 import os
-
-# Correct usage: environment variable name only
-SECRET_KEY = os.getenv('Django_Secret')  # NOT the actual key value
+# environment variables
+SECRET_KEY = '8&+7*fpz#2@l34*o_5(8b9r2z6911b)tdtohx8d^yc6x*#@76m'
 DEBUG = False
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'djongo-3g5h.onrender.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
-OPENAI_KEY = os.getenv("OpenAI")
-MONGO_URI = os.getenv("Mongo_URI")
-
+# Add your environment variables for MongoDB and OpenAI
+OPENAI_KEY = 'AIzaSyAD23OTjqg-mfRlNTY9tx8-lt14G9AKPSY'
+MONGO_URI = 'd5f80a3894197fed3ab7df49986a683c'
 
 INSTALLED_APPS = [
     'django.contrib.admin',

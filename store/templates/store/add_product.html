@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Add Product</title>
 </head>
 <body>
     <h2>Add a product</h2>
@@ -13,6 +13,16 @@
         {{ form.as_p }}
         <button type="submit">Add product</button>
     </form>
+
+    <!-- Display the tags if available after submission -->
+    {% if form.instance.tags %}
+        <h3>Generated Tags:</h3>
+        <ul>
+            {% for tag in form.instance.tags %}
+                <li>{{ tag }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
 
     <a href="{% url 'product_list' %}">Back to products</a>
 </body>
